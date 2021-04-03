@@ -1,8 +1,10 @@
+import java.util.Scanner;
+
 public class arraAsParamAndReturnValue {
     /*
      * reverse method
      */
-    private static char[] turn(char[] characters) {
+    private static char[] turn (char[] characters) {
         /* returning array to same size as the one received as parameter */
         char[] retuning = new char[characters.length];
         int j = 0;
@@ -17,19 +19,37 @@ public class arraAsParamAndReturnValue {
     /*
      * printer method
      */
-    private static void printer(char[] characters) {
+    private static void printer (char[] characters) {
         for (int i = 0; i < characters.length; ++i) {
             System.out.print(characters[i]);
         }
         System.out.println();
     }
 
+//    public static double[] getArray() {
+//        double[] x = {1.2, 3.5, 4.8};
+//        return x;
+//    }
+
+    ;
+
     // main method
     public static void main(String[] args) {
-        char[] characterTable = {'V', 'i', 'o', 'p', 'e'};
-        char[] reverse;
+        Scanner  input = new Scanner(System.in);
+        System.out.println(" Please enter your input. ");
+        char[] characterTable =input.next().toCharArray();
         printer(characterTable);
-        reverse = turn(characterTable);
+        char [] reverse = turn(characterTable);
         printer(reverse);
+
+        //call getArray();
+//        double[] values = getArray();
+//
+//        for (double numbers : values
+//            ) {
+//            System.out.println("numbers = " + numbers);
+//        }
+
     }
+
 }

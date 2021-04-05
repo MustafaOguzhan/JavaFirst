@@ -12,7 +12,7 @@ public class copyOfAnArray {
     }
 
     public static void main(String[] args) {
-        int[] original = {1, 2, 3, 4, 5};
+        int[] original = {3,5,8,965,89,45};
         int[] copy;
         copy = copyOfAnArray(original);
         for (int i=0; i < copy.length; ++i)

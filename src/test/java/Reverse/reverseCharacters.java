@@ -25,6 +25,7 @@ public class reverseCharacters {
         return reverseInput;
     }
 
+
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
